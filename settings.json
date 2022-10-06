@@ -1,0 +1,3 @@
+{
+  "galaxy.meteor.com": { "env": { "MONGO_URL": "mongodb://partharoy:EwsmJ5CGbf2esPBKx@SG-galaxycluster-38726.servers.mongodirector.com:27017,SG-galaxycluster-38727.servers.mongodirector.com:27017/push-test-partha-meteorapp-com?replicaSet=RS-galaxycluster-0&ssl=true" } }
+}
