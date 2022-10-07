@@ -15,6 +15,13 @@ Meteor.startup(() => {
       window.plugins.OneSignal.promptForPushNotificationsWithUserResponse( function(accepted) {
         alert("User has accepted push notifications", accepted );
       })
+
+      window.plugins.OneSignal.setNotificationOpenedHandler(function(jsonData){
+        const {title, body, additionalData} = jsonData.notification;
+        alert(' Title: ' + title);
+        alert('Description' + body);
+        alert('additionalData '+ JSON.stringify(additionalData))
+      })
     }
 
     document.addEventListener('deviceready', initializeOnesignalPushSDK, false);
