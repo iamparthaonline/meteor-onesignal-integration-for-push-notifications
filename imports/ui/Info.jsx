@@ -25,7 +25,8 @@ export const Info = () => {
         headings: {
           "en": title
         },
-        included_segments: ["All"],
+        // included_segments: ["All"],
+        include_external_user_ids: ['user_id_1', 'user_id_2'],
         data: {
           currentTime: new Date(),
           sentBy: "Partha"

@@ -22,6 +22,12 @@ Meteor.startup(() => {
         alert('Description' + body);
         alert('additionalData '+ JSON.stringify(additionalData))
       })
+
+      /** Setting user id */
+      window.plugins.OneSignal.setExternalUserId(Meteor.userId());
+
+      /** Removing user id */
+      window.plugins.OneSignal.removeExternalUserId(results => {});
     }
 
     document.addEventListener('deviceready', initializeOnesignalPushSDK, false);
